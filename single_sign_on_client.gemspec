@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.summary     = "Simple Rails Engine that provides single sign on capabilities to Rails applications."
   s.description = "It is supposed to connect to an application that uses SingleSignOnServer Rails Engine."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.8"
