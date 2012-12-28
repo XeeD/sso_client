@@ -1,0 +1,5 @@
+en:
+  single_sign_on:
+    messages:
+      logged_in: "Successfully logged in"
+      logged_out: "You have successfully signed out"

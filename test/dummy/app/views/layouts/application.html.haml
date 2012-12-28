@@ -1,0 +1,29 @@
+!!!
+%html
+  %head
+    %title Single Sign On client - example application
+    = stylesheet_link_tag "application", media: "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+
+  %body
+
+  - for type, message in flash
+    %div.flash_message{:id => "flash_#{type}"}
+      = message
+
+  #user_area
+    - if user_logged_in?
+      Přihlášen #{current_user.first_name} #{current_user.last_name}
+      | #{link_to "odhlásit", logout_path}
+    - else
+      = link_to "Přihlásit", login_path
+
+
+  %ul
+    %li
+      = link_to "Public action", root_path
+    %li
+      = link_to "'Secret' action (login required)", secrets_path
+
+  = yield
