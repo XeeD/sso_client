@@ -43,6 +43,7 @@ Helpers (usable in controllers and views):
 -   `login_path` - omniauth entry point, that redirects user to the provider for sign-on
 -   `logout_path` - this will logout the user in the application as well as at the provider and redirect back
 -   `current_user` - SingleSignOnClient::User instance
+-   `user_decorator` - module that, if supplied, will be mixed-in into the User class (see test/dummy for example)
 
 Authentication provider
 -----------------------

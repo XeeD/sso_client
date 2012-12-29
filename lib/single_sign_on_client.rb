@@ -16,6 +16,9 @@ module SingleSignOnClient
   mattr_accessor :app_secret
   @@app_secret = nil
 
+  mattr_accessor :user_decorator
+  @@user_decorator = nil
+
   module ::OmniAuth
     module Strategies
       autoload :SingleSignOn, 'omni_auth/strategies/single_sign_on'

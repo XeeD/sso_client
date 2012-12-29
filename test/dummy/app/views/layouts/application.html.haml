@@ -14,7 +14,7 @@
 
   #user_area
     - if user_logged_in?
-      Přihlášen #{current_user.first_name} #{current_user.last_name}
+      Přihlášen #{current_user.name}
       | #{link_to "odhlásit", logout_path}
     - else
       = link_to "Přihlásit", login_path

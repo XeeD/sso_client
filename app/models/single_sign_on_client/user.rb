@@ -4,6 +4,10 @@ module SingleSignOnClient
 
     serialize :properties
 
+    if SingleSignOnClient.user_decorator
+      include SingleSignOnClient.user_decorator
+    end
+
     def self.from_omniauth(omniauth)
       find_or_create_by_uid(omniauth['uid']) do |user|
         user.properties = omniauth['extra']
@@ -12,14 +16,6 @@ module SingleSignOnClient
 
     def properties=(properties)
       self[:properties] = properties.symbolize_keys
-    end
-
-    def method_missing(method_name, *args)
-      if properties.respond_to?(:has_key?) && properties.has_key?(method_name)
-        properties[method_name]
-      else
-        super
-      end
     end
   end
 end
