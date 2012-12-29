@@ -56,5 +56,5 @@ for a project I am currently working on.
 
 Credit
 ------
-Based on "sso-devise-omniauth-client"(https://github.com/joshsoftware/sso-devise-omniauth-client)
+Based on [sso-devise-omniauth-client](https://github.com/joshsoftware/sso-devise-omniauth-client)
 demo application by Gautam Rege.
