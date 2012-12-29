@@ -1,0 +1,4 @@
+---
+provider_url: "http://sso-provider.dev"
+app_id: "DummyApp"
+app_secret: "1234567890"
