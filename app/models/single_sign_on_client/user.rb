@@ -15,7 +15,7 @@ module SingleSignOnClient
     end
 
     def method_missing(method_name, *args)
-      if properties.has_key?(method_name)
+      if properties.respond_to?(:has_key?) && properties.has_key?(method_name)
         properties[method_name]
       else
         super
