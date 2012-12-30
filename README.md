@@ -7,11 +7,11 @@ Installation
 ------------
 To install the engine, you need to include the gem in you Gemfile, copy the engine's migrations and run them.
 
-    gem 'sso-client' git: https://github.com/XeeD/sso-client
+    gem 'sso-client', git: https://github.com/XeeD/sso-client
     bundle install
     rake sso_client:install:migrations
     rake db:migrate
-q
+
 You do not need to mount the engine in `routes.rb` as the engine add its paths into the global scope
 (paths are not namespaced).
 
@@ -26,8 +26,9 @@ To configure the application, create a Ruby script in `config/initializers`, for
 
 There are 3 configuration options:
 -   provider_url: URL of application that provides authentication
--   app_id
--   ap_secret
+-   app_id: registered name of application at SSOProvider
+-   ap_secret: secret associated with the app at SSOProvider
+-   user_decorator: module that, if supplied, will be mixed-in into the User class (see test/dummy for example)
 
 How to use in your Rails application
 ------------------------------------
@@ -43,7 +44,6 @@ Helpers (usable in controllers and views):
 -   `login_path` - omniauth entry point, that redirects user to the provider for sign-on
 -   `logout_path` - this will logout the user in the application as well as at the provider and redirect back
 -   `current_user` - SingleSignOnClient::User instance
--   `user_decorator` - module that, if supplied, will be mixed-in into the User class (see test/dummy for example)
 
 Authentication provider
 -----------------------
