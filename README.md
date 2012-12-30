@@ -1,7 +1,8 @@
-SingleSignOnClient
-==================
+SSOClient
+=========
+*Single Sign On for your Rails application*
 
-Rails Engine that enables user authentication by third party provider.
+SSOClient is a Rails Engine that enables user authentication by third party provider.
 
 Installation
 ------------
@@ -24,7 +25,15 @@ Configuration
 To configure the application, create a Ruby script in `config/initializers`, for example
 `single_sign_on_client.rb`.
 
-There are 3 configuration options:
+    SSOClient.setup do |config|
+      config.provider_url = "http://sso-provider.dev"
+      config.app_id = "MyApp"
+      config.app_secret = "12345678901234567890"
+      config.user_decorator = UserDecorator
+    end
+
+
+There are 4 configuration options:
 -   provider_url: URL of application that provides authentication
 -   app_id: registered name of application at SSOProvider
 -   ap_secret: secret associated with the app at SSOProvider
@@ -47,13 +56,8 @@ Helpers (usable in controllers and views):
 
 Authentication provider
 -----------------------
-For example server that works with this gem, you may use use
-[sso-devise-omniauth-provider](https://github.com/joshsoftware/sso-devise-omniauth-provider)
-
-But you need to change all paths that include *josh_id* to *single_sign_on*
-
-I will make an Rails Engine base on this application and publish it as gem soon, as I need it
-for a project I am currently working on.
+This gem is intended to authenticate through Rails application that mount SSOProvider engine.
+You can find the engine as a gem in this repository: [SSOProvider](https://github.com/XeeD/sso_provider).
 
 Credit
 ------
