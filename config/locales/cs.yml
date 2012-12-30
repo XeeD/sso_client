@@ -1,5 +1,5 @@
 cs:
-  single_sign_on:
+  sso_client:
     messages:
       logged_in: "Právě jste byli přihlášeni"
       logged_out: "Odhlášení proběhlo úspěšně"

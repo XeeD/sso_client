@@ -3,7 +3,7 @@ require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 
 Bundler.require
-require "single_sign_on_client"
+require "sso_client"
 
 module Dummy
   class Application < Rails::Application

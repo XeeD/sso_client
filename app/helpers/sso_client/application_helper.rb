@@ -1,4 +1,4 @@
-module SingleSignOnClient
+module SSOClient
   module ApplicationHelper
   end
 end

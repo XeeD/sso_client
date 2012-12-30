@@ -4,5 +4,5 @@ Rails.application.routes.draw do
 
   resources :secrets, only: [:index]
 
-  mount SingleSignOnClient::Engine => "/single_sign_on_client"
+  mount SSOClient::Engine => "/sso_client"
 end

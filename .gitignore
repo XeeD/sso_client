@@ -7,3 +7,4 @@ test/dummy/log/*.log
 test/dummy/tmp/
 test/dummy/.sass-cache
 test/dummy/config/sso_provider.yml
+test/dummy/db/migrate/*.sso_client.rb

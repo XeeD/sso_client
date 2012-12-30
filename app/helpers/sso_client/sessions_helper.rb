@@ -1,4 +1,4 @@
-module SingleSignOnClient
+module SSOClient
   module SessionsHelper
   end
 end

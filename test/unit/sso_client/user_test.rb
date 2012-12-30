@@ -1,6 +1,6 @@
 require 'test_helper'
 
-module SingleSignOnClient
+module SSOClient
   class UserTest < ActiveSupport::TestCase
     # test "the truth" do
     #   assert true

@@ -1,6 +1,6 @@
 require 'test_helper'
 
-module SingleSignOnClient
+module SSOClient
   class SessionsHelperTest < ActionView::TestCase
   end
 end

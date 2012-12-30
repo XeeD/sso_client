@@ -1,6 +1,6 @@
 require 'test_helper'
 
-module SingleSignOnClient
+module SSOClient
   class SessionsControllerTest < ActionController::TestCase
     test "should get failure" do
       get :failure

@@ -1,11 +1,11 @@
-module SingleSignOnClient
+module SSOClient
   class User < ActiveRecord::Base
     attr_accessible :uid
 
     serialize :properties
 
-    if SingleSignOnClient.user_decorator
-      include SingleSignOnClient.user_decorator
+    if SSOClient.user_decorator
+      include SSOClient.user_decorator
     end
 
     def self.from_omniauth(omniauth)

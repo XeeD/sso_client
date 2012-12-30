@@ -1,4 +1,4 @@
-module SingleSignOnClient
+module SSOClient
   module Controllers
     module Helpers
       extend ActiveSupport::Concern

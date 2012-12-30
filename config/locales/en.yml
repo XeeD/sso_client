@@ -1,5 +1,5 @@
 en:
-  single_sign_on:
+  sso_client:
     messages:
       logged_in: "Successfully logged in"
       logged_out: "You have successfully signed out"

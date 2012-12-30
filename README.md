@@ -7,9 +7,9 @@ Installation
 ------------
 To install the engine, you need to include the gem in you Gemfile, copy the engine's migrations and run them.
 
-    gem 'SingleSignOnClient' git: https://github.com/XeeD/SingleSignOnClient
+    gem 'sso-client' git: https://github.com/XeeD/sso-client
     bundle install
-    rake single_sign_on_client:install:migrations
+    rake sso_client:install:migrations
     rake db:migrate
 q
 You do not need to mount the engine in `routes.rb` as the engine add its paths into the global scope

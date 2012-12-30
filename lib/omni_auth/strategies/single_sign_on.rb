@@ -4,9 +4,9 @@ module OmniAuth
     class SingleSignOn < OmniAuth::Strategies::OAuth2
 
       option :client_options, {
-          :site => SingleSignOnClient.provider_url,
-          :authorize_url => "#{SingleSignOnClient.provider_url}/auth/single_sign_on/authorize",
-          :access_token_url => "#{SingleSignOnClient.provider_url}/auth/single_sign_on/access_token"
+          :site => SSOClient.provider_url,
+          :authorize_url => "#{SSOClient.provider_url}/auth/single_sign_on/authorize",
+          :access_token_url => "#{SSOClient.provider_url}/auth/single_sign_on/access_token"
       }
 
       uid { raw_info['id'] }

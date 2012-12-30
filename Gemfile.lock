@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    single_sign_on_client (0.0.1)
+    sso_client (0.0.1)
       haml
       omniauth
       omniauth-oauth2
@@ -117,5 +117,5 @@ PLATFORMS
 
 DEPENDENCIES
   jquery-rails
-  single_sign_on_client!
   sqlite3
+  sso_client!

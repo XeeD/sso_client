@@ -1,6 +1,6 @@
-module SingleSignOnClient
+module SSOClient
   module Controllers
-    autoload :Helpers, 'single_sign_on_client/controllers/helpers'
+    autoload :Helpers, 'sso_client/controllers/helpers'
   end
 
   def self.setup
@@ -26,4 +26,4 @@ module SingleSignOnClient
   end
 end
 
-require "single_sign_on_client/engine"
+require "sso_client/engine"

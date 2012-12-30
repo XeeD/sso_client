@@ -11,7 +11,7 @@ end
 SSO_PROVIDER = YAML.load_file(SSO_PROVIDER_SETTINGS_FILE).symbolize_keys
 
 # Setup the client
-SingleSignOnClient.setup do |config|
+SSOClient.setup do |config|
   config.provider_url   = SSO_PROVIDER[:provider_url]
   config.app_id         = SSO_PROVIDER[:app_id]
   config.app_secret     = SSO_PROVIDER[:app_secret]
