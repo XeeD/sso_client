@@ -7,7 +7,7 @@ Installation
 ------------
 To install the engine, you need to include the gem in you Gemfile, copy the engine's migrations and run them.
 
-    gem 'sso-client', git: https://github.com/XeeD/sso-client
+    gem 'sso_client', git: 'https://github.com/XeeD/sso_client'
     bundle install
     rake sso_client:install:migrations
     rake db:migrate

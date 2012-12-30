@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.version     = SSOClient::VERSION
   s.authors     = ["Lukas Voda"]
   s.email       = ["xeedus@gmail.com"]
-  s.homepage    = "http://www.github.com/xeed/sso-client"
+  s.homepage    = "http://www.github.com/xeed/sso_client"
   s.summary     = "Simple Rails Engine that provides single sign on capabilities to Rails applications."
   s.description = "It authenticates users against application with SSOProvider Rails Engine."
 
