@@ -10,7 +10,7 @@ module SSOClient
 
     def self.from_omniauth(omniauth)
       find_or_create_by_uid(omniauth['uid']) do |user|
-        user.properties = omniauth['extra']
+        user.properties = omniauth['extra'] + omniauth['info']
       end
     end
 
